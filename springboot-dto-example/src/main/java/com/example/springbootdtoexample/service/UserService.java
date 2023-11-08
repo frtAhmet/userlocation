@@ -16,7 +16,10 @@ public class UserService {
     private UserRepository userRepository;
 
     public List<UserLocationDTO> getAllUsersLocation(){
-        return userRepository.findAll().stream().map(this::convertEntityToDto).collect(Collectors.toList());
+        return userRepository.findAll()
+                .stream()
+                .map(this::convertEntityToDto)
+                .collect(Collectors.toList());
     }
 
     private UserLocationDTO convertEntityToDto(User user){

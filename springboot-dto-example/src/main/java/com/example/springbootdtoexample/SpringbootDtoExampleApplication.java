@@ -35,7 +35,7 @@ public class SpringbootDtoExampleApplication implements CommandLineRunner {
 		User user1 = new User();
 		user1.setFirstName("Ahmet");
 		user1.setLastName("Fırat");
-		user1.setEmail("ahmet.firat.cmpe@gmail.com");
+		user1.setEmail("afirat@gmail.com");
 		user1.setPassword("secret");
 		user1.setLocation(location);
 		userRepository.save(user1);
